@@ -2,139 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_marginBottom="10dp"
-    android:background="#FFFFFF"
-    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
     android:layout_marginLeft="10dp"
-    android:layout_gravity="center_vertical"
+    android:layout_marginRight="10dp"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
     android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:orientation="horizontal">
+
+
 
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:id="@+id/hotelIv"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
             android:src="@drawable/alcohol_bar_beer_941864"/>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_weight="1">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bar Name"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:id="@+id/barNameTv"/>
+            android:text="Title"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:id="@+id/titleTv"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
-                android:src="@drawable/asset"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:text="Buy 1 get 1 free on bear"
-            />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
-                android:src="@drawable/asset"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:text="Unlimited Drimk for $9.99"
-            />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
-                android:src="@drawable/asset"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:text="Buy 1 get 1 free on bear"
-            />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="end"
-        android:layout_marginRight="10dp"
-        android:layout_weight="1">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="17 Min"
-            android:textSize="12dp"
-            android:id="@+id/timeTv"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
-                android:src="@drawable/star"
-                android:layout_marginRight="2dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4.4"
-            android:textSize="12sp"
-            android:textColor="#00FF00"
-            android:id="@+id/ratingTv"/>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="9 PM to 3 AM"
-            android:textSize="12sp"
-            android:textColor="#00FF00"
-            android:id="@+id/workTimeTv"/>
-
-    </LinearLayout>
 
 </LinearLayout>

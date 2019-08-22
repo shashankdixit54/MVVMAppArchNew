@@ -18,7 +18,7 @@ public class MyApplication extends Application {
 
         mApiComponent = DaggerApiComponent.builder()
                 .appModule(new AppModule(this))
-                .apiModule(new ApiModule("https://navkiraninfotech.com/Customers/custom/barbuddy/api/"))
+                .apiModule(new ApiModule("https://newsapi.org/v2/"))
                 .build();
     }
 

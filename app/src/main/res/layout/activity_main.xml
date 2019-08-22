@@ -5,180 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#CCCCCC"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:layout_width="wrap_content"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipeRefreshLayout"
         android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:id="@+id/titleImage"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/banner"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Happy Hours"
-                    android:gravity="center"
-                    android:layout_centerInParent="true"
-                    android:textColor="#FFFFFF"
-                    android:textSize="50sp"
-                    android:textStyle="bold"/>
-            </RelativeLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Offers Near You"
-                        android:gravity="start"
-                        android:textSize="16sp"
-                        android:layout_weight="1"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="See all"
-                        android:gravity="start"
-                        android:textColor="#0000FF"
-                        android:textSize="14sp"
-                        android:textStyle="normal"/>
-
-                </LinearLayout>
-
-                <android.support.v7.widget.RecyclerView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:id="@+id/recyclerViewOffer">
-
-                </android.support.v7.widget.RecyclerView>
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="The King Of the shots"
-                    android:gravity="start"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Most Tranding Bar Near You"
-                    android:gravity="start"
-                    android:textSize="12sp"
-                    android:textStyle="normal"/>
-
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/cardViewForOffer">
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:orientation="horizontal">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Bar Near You"
-                        android:gravity="start"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="28 Bar"
-                        android:gravity="start"
-                        android:id="@+id/barNumTv"
-                        android:textSize="12sp"
-                        android:textStyle="normal"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Filter/Sort"
-                        android:gravity="start"
-                        android:textSize="14sp"
-                        android:textColor="#0000FF"
-                        android:textStyle="normal"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-
-
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
@@ -188,7 +21,6 @@
                 android:id="@+id/recyclerView">
 
             </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
-        </LinearLayout>
-    </ScrollView>
 </LinearLayout>
